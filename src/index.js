@@ -1,13 +1,21 @@
 // index.js
 
 // Callbacks
-const handleClick = (ramen) => {
+img=document.querySelector(img)
+
+const handleClick = function(ramen){
   // Add code
-  for (const ramen in ramens){
-    if (ramen.id= ID){
-      break;
+  if img.id
+   for (const ramen of ramens){
+    this.name=name
+    this.restaurant=name
+    this.image=image
+    this.rating=rating
+    this.comment=comment
+    this.id=id
     }
-    
+  
+img.addEventListener("click",handleClick())    
     
 const addSubmitListener = () => {
   // Add code
