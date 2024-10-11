@@ -5,7 +5,10 @@ img=document.querySelector(img)
 
 const handleClick = function(ramen){
   // Add code
-   for (const ramen of ramens){
+  fetch(http://localhost:3000)
+        .then(res=>res.JSON())
+        .then(data=ramens)
+  for (const ramen of ramens){
      if (img.id=ramen.id){
       this.name=document.getElementbyClass(name)
       this.restaurant=document.getElementbyClass(restaurant)
