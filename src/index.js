@@ -11,6 +11,7 @@ const addSubmitListener = () => {
 
 const displayRamens = () => {
   // Add code
+  fetch(http://localhost:3000
 };
 
 const main = () => {
