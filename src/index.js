@@ -7,14 +7,14 @@ const handleClick = function(ramen){
   // Add code
   if (img.id=ramen.id){
    for (const ramen of ramens){
-    this.name=name
-    this.restaurant=name
-    this.image=image
-    this.rating=rating
-    this.comment=comment
-    this.id=id
+    this.name=document.getElementbyClass(name)
+    this.restaurant=document.getElementbyClass(restaurant)
+    this.image=document.getElementbyClass(image)
+    this.rating=document.getElementbyClass(rating)
+    this.comment=document.getElementbyClass(comment)
+    this.id=document.getElementbyClass(id)
     break}
-  }    
+  }}    
   
 img.addEventListener("click",handleClick())    
     
