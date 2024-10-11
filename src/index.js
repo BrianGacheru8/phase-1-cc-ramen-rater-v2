@@ -5,16 +5,16 @@ img=document.querySelector(img)
 
 const handleClick = function(ramen){
   // Add code
-  if (img.id=ramen.id){
    for (const ramen of ramens){
-    this.name=document.getElementbyClass(name)
-    this.restaurant=document.getElementbyClass(restaurant)
-    this.image=document.getElementbyClass(image)
-    this.rating=document.getElementbyClass(rating)
-    this.comment=document.getElementbyClass(comment)
-    this.id=document.getElementbyClass(id)
-    break}
-  }}    
+     if (img.id=ramen.id){
+      this.name=document.getElementbyClass(name)
+      this.restaurant=document.getElementbyClass(restaurant)
+      this.image=document.getElementbyClass(image)
+      this.rating=document.getElementbyClass(rating)
+      this.comment=document.getElementbyClass(comment)
+      this.id=document.getElementbyClass(id)
+      break}
+   }    
   
 img.addEventListener("click",handleClick())    
     
