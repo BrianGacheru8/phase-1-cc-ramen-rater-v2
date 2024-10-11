@@ -7,9 +7,9 @@ const handleClick = function(ramen){
   // Add code
   fetch(http://localhost:3000)
         .then(res=>res.JSON())
-        .then(data=>IDO=data.id)
+        .then(data=>const tree =data)
   for (const ramen of ramens){
-     if (ramen.id=IDO){
+     if (ramen["id"]=tree["id"]){
       this.name=document.getElementbyClass(name)
       this.restaurant=document.getElementbyClass(restaurant)
       this.image=document.getElementbyClass(image)
