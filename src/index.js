@@ -5,7 +5,7 @@ img=document.querySelector(img)
 
 const handleClick = function(ramen){
   // Add code
-  if img.id
+  if (img.id=ramen.id){
    for (const ramen of ramens){
     this.name=name
     this.restaurant=name
@@ -13,7 +13,8 @@ const handleClick = function(ramen){
     this.rating=rating
     this.comment=comment
     this.id=id
-    }
+    break}
+  }    
   
 img.addEventListener("click",handleClick())    
     
