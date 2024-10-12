@@ -21,22 +21,21 @@ const addSubmitListener = () => {
           body:json.stringify(form))
      .then(console.log(res))
      .catch(error=>console.log(error))
-    event.preventDefault()})}
+    event.preventDefault()}
   
                   
 const displayRamens = () => {
   // Add code
   fetch(http://localhost:3000/ramens)
         .then(res=>res.json())
-        .then(ramens=>console.log(ramens)
+        .then(ramens=>console.log(ramens))
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-menu")
     image=document.createElement("img")
     image.src=ramen.image
     image.alt=ramen.name
     image.addEventListener("click",handleClick(ramen) )
-    menu.appendChild(image)
-}  
+    menu.appendChild(image)}}  
 
 const main = () => {
   // Invoke displayRamens here
