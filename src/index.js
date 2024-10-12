@@ -5,10 +5,10 @@
 const handleClick = function(ramen){
   // Add code
     document.getElementById('name').innerText = ramen.name;
-    document.getElementById('ramen-image').src = ramen.image;
-    document.getElementById('ramen-description').innerText = ramen.description;
-    document.getElementById('ramen-rating').innerText = ramen.rating;
-    document.getElementById('comments').innerText = ramen.comments
+    document.getElementById('detail-image').src = ramen.image;
+    document.getElementById('restaurant').innerText = ramen.restaurant;
+    document.getElementById('rating-display').innerText = ramen.rating;
+    document.getElementById('comments-display').innerText = ramen.comments
    }    
   
 document.queryselector(img).addEventListener("click",handleClick())    
