@@ -14,25 +14,21 @@ const handleClick = function(ramen){
 const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
-  form.addEventlistener("submit",(){
-    newname=document.getElementbyId("new-name").value
-    newrest=document.getElementbyId("new-restaurant").value
-    newimg=document.getElementbyId("new-image").value
-    newrate=document.getElementbyId("new-rate").value
-    newcommt=document.getElementbyId("new-comment").value
-}
+  form.addEventlistener("submit",(handleClick))
 
-const displayRamens = (handleClick) => {
+const displayRamens = () => {
   // Add code
   fetch(http://localhost:3000)
         .then(res=>res.json())
         .then(data=>ramens)
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-menu")
-    ign=document.createElement(img)
-    ign=ramen.image
-    
-};
+    img=document.createElement(img)
+    img.src=ramen.image
+    img.alt=ramen.name
+    menu.appendChild(img)
+    img.addEventListener("click",handleClick(ramen) })
+}  
 
 const main = () => {
   // Invoke displayRamens here
