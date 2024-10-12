@@ -18,9 +18,10 @@ const addSubmitListener = () => {
     fetch(http://localhost:3000/ramens,{
           method:POST
           header:{"Content-type":"application/json"}
-          body:json.stringefy(form)
-    .then(console.log(res))
-  event.preventDefault()})}
+          body:json.stringify(form)
+     .then(console.log(res))
+     .catch(error=>console.log(error))
+    event.preventDefault()})}
   
                   
 const displayRamens = () => {
@@ -33,7 +34,7 @@ const displayRamens = () => {
     image=document.createElement("img")
     image.src=ramen.image
     image.alt=ramen.name
-    image.addEventListener("click",handleClick() )
+    image.addEventListener("click",handleClick(ramen) )
     menu.appendChild(image)
 }  
 
