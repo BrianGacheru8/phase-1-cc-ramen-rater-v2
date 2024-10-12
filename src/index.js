@@ -13,7 +13,7 @@ const handleClick = function(ramen){
           
 const addSubmitListener = () => {
   // Add code
-  const form=document.getElementbyId("new-ramen")
+  const form=document.getElementById("new-ramen")
   form.addEventListener("submit",()=>{
     fetch(("http://localhost:3000/ramens"),{
           method:"POST",
@@ -31,7 +31,7 @@ const displayRamens = () => {
         .then((data)=>{
            const ramens = data
            ramens.forEach((ramen)=>{
-            menu=document.getElementbyId("ramen-menu"),
+            menu=document.getElementById("ramen-menu"),
             image=document.createElement("img"),
             image.src=ramen.image,
             image.alt=ramen.name,
@@ -42,7 +42,7 @@ const main = () => {
   // Invoke displayRamens here
   // Invoke addSubmitListener here
   displayRamens()
-  addSubmitLIstener()
+  addSubmitListener()
 }
 
 document.addEventListener("DOMContentLoaded",main)
