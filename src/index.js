@@ -27,7 +27,11 @@ const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
   form.addEventlistener("submit",(){
-    
+    newname=document.getElementbyId("new-name").value
+    newrest=document.getElementbyId("new-restaurant").value
+    newimg=document.getElementbyId("new-image").value
+    newrate=document.getElementbyId("new-rate").value
+    newcommt=document.getElementbyId("new-comment").value
 }
 
 const displayRamens = () => {
