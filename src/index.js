@@ -27,7 +27,7 @@ const displayRamens = () => {
         .then((data)=>{
              data.forEach((ramen)=>{
              const image=document.createElement("img")
-             menu=document.getElementById("ramen-menu")
+             const menu=document.getElementById("ramen-menu")
              image.src=ramen.image
              image.alt=ramen.name
              image.addEventListener("click",handleClick(ramen) ),
