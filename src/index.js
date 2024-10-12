@@ -4,11 +4,11 @@
 
 const handleClick = function(ramen){
   // Add code
-    document.getElementById('name').innerText = ramen.name;
-    document.getElementById('detail-image').src = ramen.image;
-    document.getElementById('restaurant').innerText = ramen.restaurant;
-    document.getElementById('rating-display').innerText = ramen.rating;
-    document.getElementById('comments-display').innerText = ramen.comments
+    //document.getElementById('name').innerText = ramen.name;
+    //document.getElementById('detail-image').src = ramen.image;
+    //document.getElementById('restaurant').innerText = ramen.restaurant;
+    //document.getElementById('rating-display').innerText = ramen.rating;
+    //document.getElementById('comments-display').innerText = ramen.comments
    }    
           
 const addSubmitListener = () => {
