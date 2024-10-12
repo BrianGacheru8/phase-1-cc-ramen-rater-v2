@@ -15,6 +15,7 @@ const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
   form.addEventListener("submit",(){
+  form  
     fetch(http://localhost:3000,{
           method:POST
           header:{"Content-type":"application/json"}
