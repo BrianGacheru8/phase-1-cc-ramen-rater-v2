@@ -14,10 +14,12 @@ const handleClick = function(ramen){
 const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
-  form.addEventlistener("submit",(){
-    
-    
-
+  form.addEventListener("submit",(){
+    fetch(http://localhost:3000,{
+          method:POST
+          header:{"Content-type":"application/json"}
+          body:json.stringefy(form)})}
+                  
 const displayRamens = () => {
   // Add code
   fetch(http://localhost:3000)
@@ -39,7 +41,7 @@ const main = () => {
   addSubmitLIstener()
 }
 
-document.addEventListener("DOMContent-loaded",main())
+document.addEventListener("DOMContentLoaded",main())
 
 // Export functions for testing
 export {
