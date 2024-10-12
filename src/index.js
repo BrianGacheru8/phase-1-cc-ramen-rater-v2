@@ -15,18 +15,18 @@ const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
   form.addEventListener("submit",()=>{
-    fetch(http://localhost:3000/ramens,{
-          method:POST
-          header:{"Content-type":"application/json"}
-          body:json.stringify(form))
+    fetch(("http://localhost:3000/ramens"),{
+          method:"POST",
+          headers:{"Content-type":"application/json"},
+          body:json.stringify(form)})
      .then(console.log(res))
      .catch(error=>console.log(error))
-    event.preventDefault()}
+    event.preventDefault()})}
   
                   
 const displayRamens = () => {
   // Add code
-  fetch(http://localhost:3000/ramens)
+  fetch("http://localhost:3000/ramens")
         .then(res=>res.json())
         .then(ramens=>console.log(ramens))
    ramens.forEach((ramen)=>{
