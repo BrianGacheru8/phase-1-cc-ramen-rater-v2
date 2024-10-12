@@ -15,7 +15,7 @@ const addSubmitListener = () => {
   // Add code
   const form=document.getElementById("new-ramen")
   form.addEventListener("submit",()=>{
-    fetch(("http://localhost:3000/ramens/"),{
+    fetch(("http://localhost:3000/ramens"),{
           method:"POST",
           headers:{"Content-type":"application/json"},
           body:json.stringify(form)})
@@ -26,12 +26,12 @@ const addSubmitListener = () => {
                   
 const displayRamens = () => {
   // Add code
-  fetch("http://localhost:3000/ramens/")
+  fetch("http://localhost:3000/ramens")
         .then(res=>res.json())
         .then((data)=>{
            const ramens = data
            ramens.forEach((ramen)=>{
-            menu=document.getElementById("ramen-menu"),
+            const menu=document.getElementById("ramen-menu"),
             image=document.createElement("img"),
             image.src=ramen.image,
             image.alt=ramen.name,
