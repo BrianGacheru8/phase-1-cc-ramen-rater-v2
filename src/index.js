@@ -14,21 +14,22 @@ const handleClick = function(ramen){
 const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
-  form.addEventListener("submit",(){
-  form  
-    fetch(http://localhost:3000,{
+  form.addEventListener("submit",()=>{
+    fetch(http://localhost:3000/ramens,{
           method:POST
           header:{"Content-type":"application/json"}
-          body:json.stringefy(form)})}
+          body:json.stringefy(form)})
+  event.preventDefault()}
+  
                   
 const displayRamens = () => {
   // Add code
-  fetch(http://localhost:3000)
+  fetch(http://localhost:3000/ramens)
         .then(res=>res.json())
         .then(data=>ramens)
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-menu")
-    img=document.createElement(img)
+    img=document.createElement("img")
     img.src=ramen.image
     img.alt=ramen.name
     img.addEventListener("click",handleClick(ramen) )
@@ -42,7 +43,7 @@ const main = () => {
   addSubmitLIstener()
 }
 
-document.addEventListener("DOMContentLoaded",main())
+document.addEventListener("DOMContentLoaded",main)
 
 // Export functions for testing
 export {
