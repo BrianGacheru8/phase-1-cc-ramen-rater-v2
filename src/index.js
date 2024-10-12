@@ -10,9 +10,7 @@ const handleClick = function(ramen){
     document.getElementById('rating-display').innerText = ramen.rating;
     document.getElementById('comments-display').innerText = ramen.comments
    }    
-  
-document.queryselector(img).addEventListener("click",handleClick())    
-    
+          
 const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
@@ -28,7 +26,8 @@ const displayRamens = () => {
   // Add code
   fetch(http://localhost:3000)
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>ramens)
+   ramens.forEach(handleClick())     
 };
 
 const main = () => {
