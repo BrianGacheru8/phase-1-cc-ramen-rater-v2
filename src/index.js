@@ -30,12 +30,12 @@ const displayRamens = () => {
         .then(res=>res.json())
         .then(ramens=>console.log(ramens))
    ramens.forEach((ramen)=>{
-    menu=document.getElementbyId("ramen-menu")
-    image=document.createElement("img")
-    image.src=ramen.image
-    image.alt=ramen.name
-    image.addEventListener("click",handleClick(ramen) )
-    menu.appendChild(image)}}  
+    menu=document.getElementbyId("ramen-menu"),
+    image=document.createElement("img"),
+    image.src=ramen.image,
+    image.alt=ramen.name,
+    image.addEventListener("click",handleClick(ramen) ),
+    menu.appendChild(image)})}  
 
 const main = () => {
   // Invoke displayRamens here
