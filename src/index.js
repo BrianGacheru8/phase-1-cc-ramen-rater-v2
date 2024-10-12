@@ -30,7 +30,7 @@ const displayRamens = () => {
     rate=ra
     img.src=ramen.image
     img.alt=ramen.name
-    img.addEventListener("click",handleClick(ramen) })
+    img.addEventListener("click",handleClick(ramen) )
 }  
 
 const main = () => {
