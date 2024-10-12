@@ -18,8 +18,8 @@ const addSubmitListener = () => {
     fetch(http://localhost:3000/ramens,{
           method:POST
           header:{"Content-type":"application/json"}
-          body:json.stringefy(form)})
-  event.preventDefault()}
+          body:json.stringefy(form)
+  event.preventDefault()})}
   
                   
 const displayRamens = () => {
