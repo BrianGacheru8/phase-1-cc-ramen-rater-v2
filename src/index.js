@@ -1,14 +1,10 @@
 // index.js
-
-// Callbacks
-
 const handleClick = function(ramen){
-  // Add code
-    //document.getElementByClass('name').innerText = ramen.name;
-    //document.getElementByClass('detail-image').src = ramen.image;
-    //document.getElementByClass('restaurant').innerText = ramen.restaurant;
-    //document.getElementById('rating-display').innerText = ramen.rating;
-    //document.getElementById('comments-display').innerText = ramen.comments
+    document.getElementByClass('name').innerText = ramen.name;
+    document.getElementByClass('detail-image').src = ramen.image;
+    document.getElementByClass('restaurant').innerText = ramen.restaurant;
+    document.getElementById('rating-display').innerText = ramen.rating;
+    document.getElementById('comments-display').innerText = ramen.comments
    }    
           
 const addSubmitListener = () => {
@@ -31,13 +27,10 @@ const displayRamens = () => {
         .then((data)=>{
            const ramens = data
            ramens.forEach((ramen)=>{
-             document.getElementByClass('name').innerText = ramen.name;
-             document.getElementByClass('detail-image').src = ramen.image;
-             document.getElementByClass('restaurant').innerText = ramen.restaurant;
-             document.getElementById('rating-display').innerText = ramen.rating;
-             document.getElementById('comments-display').innerText = ramen.comments
-             //image.addEventListener("click",handleClick(ramen) ),
-             //menu.appendChild(image)
+             image=document..createElement("img")
+             
+             image.addEventListener("click",handleClick(ramen) ),
+             menu.appendChild(image)
            })})}  
 
 const main = () => {
