@@ -1,15 +1,14 @@
 // index.js
 
 // Callbacks
-img=document.querySelector(img)
 
 const handleClick = function(ramen){
   // Add code
-    document.getElementById('ramen-name').innerText = ramen.name;
+    document.getElementById('name').innerText = ramen.name;
     document.getElementById('ramen-image').src = ramen.image;
     document.getElementById('ramen-description').innerText = ramen.description;
     document.getElementById('ramen-rating').innerText = ramen.rating;
-    document.getElementById('ramen-comments').innerText = ramen.comments
+    document.getElementById('comments').innerText = ramen.comments
    }    
   
 document.queryselector(img).addEventListener("click",handleClick())    
