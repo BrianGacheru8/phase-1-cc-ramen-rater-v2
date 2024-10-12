@@ -24,8 +24,8 @@ const displayRamens = () => {
         .then(res=>res.json())
         .then(data=>ramens)
    ramens.forEach((ramen)=>{
-    menu=document.getElementbyId("ramen-menu")
-    img=document.createElement(img)
+    menu=document.getElementbyId("ramen-detail")
+    img=document.
     img.src=ramen.image
     img.alt=ramen.name
     menu.appendChild(img)
