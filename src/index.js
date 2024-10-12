@@ -22,7 +22,7 @@ const addSubmitListener = () => {
     newcommt=document.getElementbyId("new-comment").value
 }
 
-const displayRamens = () => {
+const displayRamens = (handleClick) => {
   // Add code
   fetch(http://localhost:3000)
         .then(res=>res.json())
