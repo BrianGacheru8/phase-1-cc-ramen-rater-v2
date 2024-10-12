@@ -18,7 +18,7 @@ const addSubmitListener = () => {
     fetch(http://localhost:3000/ramens,{
           method:POST
           header:{"Content-type":"application/json"}
-          body:json.stringify(form)
+          body:json.stringify(form))
      .then(console.log(res))
      .catch(error=>console.log(error))
     event.preventDefault()})}
