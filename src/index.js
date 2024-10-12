@@ -5,20 +5,11 @@ img=document.querySelector(img)
 
 const handleClick = function(ramen){
   // Add code
-     fetch(http://localhost:3000)
-        .then(res=>res.JSON())
-        .then(data=>const ramens =data)
-     ramens.forEach(      
-     for (ramen in ramens){      
-       if (ramen["id"]=this["id"]){
-         tree.name=document.getElementbyClass(name)
-         tree.restaurant=document.getElementbyClass(restaurant)
-         tree.image=document.getElementbyClass(image)
-         tree.rating=document.getElementbyClass(rating)
-         tree.comment=document.getElementbyClass(comment)
-         tree.id=document.getElementbyClass(id)
-         break}else{
-         console.log("none")
+    document.getElementById('ramen-name').innerText = ramen.name;
+    document.getElementById('ramen-image').src = ramen.image;
+    document.getElementById('ramen-description').innerText = ramen.description;
+    document.getElementById('ramen-rating').innerText = ramen.rating;
+    document.getElementById('ramen-comments').innerText = ramen.comments
    }    
   
 document.queryselector(img).addEventListener("click",handleClick())    
