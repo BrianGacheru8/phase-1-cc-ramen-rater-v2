@@ -25,10 +25,11 @@ const displayRamens = () => {
         .then(data=>ramens)
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-detail")
-    img=document.
+    img=document.getElementbyId(image)
+    nme=document.getElementbyId(name)
+    rate=ra
     img.src=ramen.image
     img.alt=ramen.name
-    menu.appendChild(img)
     img.addEventListener("click",handleClick(ramen) })
 }  
 
