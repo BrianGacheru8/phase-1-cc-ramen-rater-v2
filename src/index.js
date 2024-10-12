@@ -28,7 +28,7 @@ const displayRamens = () => {
   // Add code
   fetch("http://localhost:3000/ramens")
         .then(res=>res.json())
-        .then(ramens=>console.log(ramens))
+        .then(data=>ramens)
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-menu"),
     image=document.createElement("img"),
