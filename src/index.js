@@ -14,7 +14,8 @@ const handleClick = function(ramen){
 const addSubmitListener = () => {
   // Add code
   const form=document.getElementbyId("new-ramen")
-  form.addEventlistener("submit",(handleClick))
+  form.addEventlistener("submit",(){
+    
 
 const displayRamens = () => {
   // Add code
@@ -33,10 +34,11 @@ const displayRamens = () => {
 const main = () => {
   // Invoke displayRamens here
   // Invoke addSubmitListener here
-  
+  displayRamens()
+  addSubmitLIstener()
 }
 
-main()
+document.addEventListener("DOMContent-loaded",main())
 
 // Export functions for testing
 export {
