@@ -29,11 +29,11 @@ const displayRamens = () => {
         .then(data=>ramens)
    ramens.forEach((ramen)=>{
     menu=document.getElementbyId("ramen-menu")
-    img=document.createElement("img")
-    img.src=ramen.image
-    img.alt=ramen.name
-    img.addEventListener("click",handleClick(ramen) )
-    menu.appendChild(img)
+    image=document.createElement("img")
+    image.src=ramen.image
+    image.alt=ramen.name
+    image.addEventListener("click",handleClick() )
+    menu.appendChild(image)
 }  
 
 const main = () => {
