@@ -27,7 +27,11 @@ const displayRamens = (handleClick) => {
   fetch(http://localhost:3000)
         .then(res=>res.json())
         .then(data=>ramens)
-   ramens.forEach(handleClick())     
+   ramens.forEach((ramen)=>{
+    menu=document.getElementbyId("ramen-menu")
+    ign=document.createElement(img)
+    ign=ramen.image
+    
 };
 
 const main = () => {
