@@ -19,6 +19,7 @@ const addSubmitListener = () => {
           method:POST
           header:{"Content-type":"application/json"}
           body:json.stringefy(form)
+    .then(console.log(res))
   event.preventDefault()})}
   
                   
