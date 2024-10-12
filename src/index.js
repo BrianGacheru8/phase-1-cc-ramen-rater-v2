@@ -29,13 +29,13 @@ const displayRamens = () => {
   fetch("http://localhost:3000/ramens")
         .then(res=>res.json())
         .then(data=>data=ramens)
-   ramens.forEach((ramen)=>{
-    menu=document.getElementbyId("ramen-menu"),
-    image=document.createElement("img"),
-    image.src=ramen.image,
-    image.alt=ramen.name,
-    image.addEventListener("click",handleClick(ramen) ),
-    menu.appendChild(image)})}  
+     ramens.forEach((ramen)=>{
+        menu=document.getElementbyId("ramen-menu"),
+        image=document.createElement("img"),
+        image.src=ramen.image,
+        image.alt=ramen.name,
+        image.addEventListener("click",handleClick(ramen) ),
+        menu.appendChild(image)})}  
 
 const main = () => {
   // Invoke displayRamens here
