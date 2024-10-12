@@ -26,7 +26,8 @@ const addSubmitListener = () => {
                   
 const displayRamens = () => {
   // Add code
-  fetch("http://localhost:3000/ramens")
+  fetch("http://localhost:3000/ramens",{mode: 'cors',
+  credentials: 'include'})
         .then(res=>res.json())
         .then((data)=>{
            const ramens = data
