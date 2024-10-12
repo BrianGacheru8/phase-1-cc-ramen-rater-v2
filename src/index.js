@@ -31,12 +31,13 @@ const displayRamens = () => {
         .then((data)=>{
            const ramens = data
            ramens.forEach((ramen)=>{
-            const menu=document.getElementById("ramen-menu"),
-            image=document.createElement("img"),
-            image.src=ramen.image,
-            image.alt=ramen.name,
-            image.addEventListener("click",handleClick(ramen) ),
-            menu.appendChild(image)})})}  
+             document.getElementById('name').innerText = ramen.name;
+             document.getElementById('detail-image').src = ramen.image;
+             document.getElementById('restaurant').innerText = ramen.restaurant;
+             document.getElementById('rating-display').innerText = ramen.rating;
+             document.getElementById('comments-display').innerText = ramen.comments
+             //image.addEventListener("click",handleClick(ramen) ),
+             //menu.appendChild(image)})})}  
 
 const main = () => {
   // Invoke displayRamens here
