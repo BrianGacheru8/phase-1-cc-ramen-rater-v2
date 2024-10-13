@@ -26,16 +26,16 @@ const displayRamens = () => {
         .then(res=>res.json())
         .then((data)=>{
              let rament=data
-             let ramens=Object.entries()
+             let ramens=Object.entries(),
              ramens.forEach((ramen)=>{
              const bee=document.createElement("span")
-             const tee=document.createElement("img")
-             const menu=document.getElementById("ramen-menu")
-             tee.src=ramen.image
-             tee.alt=ramen.name
-             bee.appendChild=tee 
-             menu.appendChild(bee)  
-             img.addEventListener("click",handleClick(ramen) )          
+             const tee=document.createElement("img"),
+             const menu=document.getElementById("ramen-menu"),
+             tee.src=ramen.image,
+             tee.alt=ramen.name,
+             bee.appendChild=tee, 
+             menu.appendChild(bee),  
+             img.addEventListener("click",handleClick(ramen))          
            })})}  
 
 const main = () => {
