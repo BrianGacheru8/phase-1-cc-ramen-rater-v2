@@ -28,12 +28,14 @@ const displayRamens = () => {
              let rament=data
              let ramens=Object.entries()
              ramens.forEach((ramen)=>{
-             const image=document.createElement("img")
+             const bee=document.createElement("span")
+             const tee=document.createElement("img")
              const menu=document.getElementById("ramen-menu")
-             image.src=ramen.image
-             image.alt=ramen.name
-             image.addEventListener("click",handleClick(ramen) ),
-             menu.appendChild(image)
+             tee.src=ramen.image
+             tee.alt=ramen.name
+             bee.appendChild=tee 
+             menu.appendChild(bee)  
+             img.addEventListener("click",handleClick(ramen) )          
            })})}  
 
 const main = () => {
