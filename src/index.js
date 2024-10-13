@@ -25,9 +25,7 @@ const displayRamens = () => {
   fetch("http://localhost:3000/ramens",)
         .then(res=>res.json())
         .then((data)=>{
-             let rament=data
-             var ramens=Object.entries(),
-             ramens.forEach((ramen)=>{
+             Object.entries(data).forEach((ramen)=>{
              let bee=document.createElement("span")
              let tee=document.createElement("img"),
              let menu=document.getElementById("ramen-menu"),
@@ -36,7 +34,7 @@ const displayRamens = () => {
              bee.appendChild=tee, 
              menu.appendChild(bee),  
              document.queryselector("img").addEventListener("click",handleClick(ramen))          
-           })})}  
+            }))}  
 
 const main = () => {
   // Invoke displayRamens here
