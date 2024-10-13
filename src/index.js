@@ -28,11 +28,11 @@ const displayRamens = () => {
              Object.entries(data).forEach((ramen)=>{
              let bee=document.createElement("span")
              let tee=document.createElement("img"),
-             let menu=document.getElementById("ramen-menu"),
+             let men=document.getElementById("ramen-menu"),
              tee.src=ramen.image,
              tee.alt=ramen.name,
              bee.appendChild=tee, 
-             menu.appendChild(bee),  
+             men.appendChild(bee),  
              document.queryselector("img").addEventListener("click",handleClick(ramen))          
             }))}  
 
