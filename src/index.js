@@ -29,7 +29,6 @@ const addSubmitListener = () => {
       .then(res => res.json())
       .then(data => {
         console.log(data);
-        // Optionally, call displayRamens() here to refresh the list
       })
       .catch(error => console.log(error));
   });
