@@ -1,8 +1,8 @@
 // index.js
 const handleClick = function (ramen) {
-  document.getElementsByClassName('name')[0].innerText = ramen.name;
-  document.getElementsByClassName('detail-image')[0].src = ramen.image;
-  document.getElementsByClassName('restaurant')[0].innerText = ramen.restaurant;
+  document.getElementsByClassName('name').innerText = ramen.name;
+  document.getElementsByClassName('detail-image').src = ramen.image;
+  document.getElementsByClassName('restaurant').innerText = ramen.restaurant;
   document.getElementById('rating-display').innerText = ramen.rating;
   document.getElementById('comments-display').innerText = ramen.comments;
 };
